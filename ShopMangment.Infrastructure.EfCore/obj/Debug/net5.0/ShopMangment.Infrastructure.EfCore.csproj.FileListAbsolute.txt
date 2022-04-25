@@ -1,0 +1,5 @@
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Infrastructure.EfCore\bin\Debug\net5.0\StroykaShop.Framework.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Infrastructure.EfCore\obj\Debug\net5.0\ShopMangment.Infrastructure.EfCore.csprojAssemblyReference.cache
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Infrastructure.EfCore\obj\Debug\net5.0\ShopMangment.Infrastructure.EfCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Infrastructure.EfCore\obj\Debug\net5.0\ShopMangment.Infrastructure.EfCore.AssemblyInfoInputs.cache
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Infrastructure.EfCore\obj\Debug\net5.0\ShopMangment.Infrastructure.EfCore.AssemblyInfo.cs
