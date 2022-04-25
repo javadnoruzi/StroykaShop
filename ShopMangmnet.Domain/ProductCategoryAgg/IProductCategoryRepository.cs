@@ -10,6 +10,6 @@ namespace ShopMangmnet.Domain.ProductCategoryAgg
 {
    public interface IProductCategoryRepository:IRepository<long,ProducCategory> 
     {
-       
+        List<ProductCategoryAgg.ProducCategory> Get(string name);
     }
 }
