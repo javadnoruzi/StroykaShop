@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ShopMangment.Application\ShopMangment.Application.csproj" />
     <ProjectReference Include="..\ShopMangment.Infrastructure.EfCore\ShopMangment.Infrastructure.EfCore.csproj" />
   </ItemGroup>
 

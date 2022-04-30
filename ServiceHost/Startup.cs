@@ -1,14 +1,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ShopMangmnet.Infrastructure.Bootstrapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using StroykaShop.Framework;
 
 namespace ServiceHost
 {
@@ -26,7 +22,7 @@ namespace ServiceHost
         {
             var ConnectinString = Configuration.GetConnectionString("");
             ShopMangmentBootstapperr.Configure(services, ConnectinString);
-
+            services.AddSingleton<IFileUpload, FileUpload>();
             services.AddRazorPages();
         }
 
@@ -54,6 +50,7 @@ namespace ServiceHost
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
         }
     }

@@ -12,17 +12,36 @@ namespace ShopMangmnet.Domain.ProductCategoryAgg
         public string Name { get; private set; }
         public long ParentId { get; private set; }
         public bool IsRemoved { get; private set; }
+        public string Slug { get; private set; }
+        public string Keyword { get; private set; }
+        public string MetaDescription { get; private set; }
+        public string Descrption { get; private set; }
+        public string Picture { get; private set; }
 
-        public ProducCategory(string name, long parentId)
+        public ProducCategory(string name, long parentId, string slug, string keyword, string metaDescription, string descrption, string picture)
         {
             Name = name;
             ParentId = parentId;
             IsRemoved = false;
+            Slug = slug;
+            Keyword = keyword;
+            MetaDescription = metaDescription;
+            Descrption = descrption;
+            if(!string.IsNullOrWhiteSpace(picture))
+            Picture = picture;
         }
-        public void Edit(string name, long parentId)
+
+        public void Edit(string name, long parentId, string slug, string keyword, string metaDescription, string descrption, string picture)
         {
             Name = name;
             ParentId = parentId;
+            IsRemoved = false;
+            Slug = slug;
+            Keyword = keyword;
+            MetaDescription = metaDescription;
+            Descrption = descrption;
+            if (!string.IsNullOrWhiteSpace(picture))
+                Picture = picture;
         }
         public void Remove()
         {

@@ -5,7 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Areas\Adminstretion\Pages\ProductCategory\Create.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ShopMangmnet.Infrastructure.Bootstrapper\ShopMangmnet.Infrastructure.Bootstrapper.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\Adminstretion\Pages\ProductCategory\Create.cshtml" />
   </ItemGroup>
 
 </Project>

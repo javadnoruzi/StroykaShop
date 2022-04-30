@@ -11,6 +11,7 @@
         public string Keyword { get;  set; }
         public string MetaDescription { get;  set; }
         public string Descrption { get;  set; }
+        public string Picture { get; set; }
 
     }
 

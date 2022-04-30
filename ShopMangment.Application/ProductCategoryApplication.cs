@@ -14,11 +14,12 @@ namespace ShopMangment.Application
     {
         private readonly IProductCategoryRepository repository;
         private readonly IUnitofWork unitOfWork;
-
-        public ProductCategoryApplication(IProductCategoryRepository repository, IUnitofWork unitOfWork)
+        private readonly IFileUpload fileUpload;
+        public ProductCategoryApplication(IProductCategoryRepository repository, IUnitofWork unitOfWork, IFileUpload fileUpload)
         {
             this.repository = repository;
             this.unitOfWork = unitOfWork;
+            this.fileUpload = fileUpload;
         }
 
         public OperationResult Create(CreatePrdouctCategory command)
@@ -29,7 +30,31 @@ namespace ShopMangment.Application
             {
                 if (!repository.Exist(x => x.Name == command.Name))
                 {
-                    repository.Create(new ProducCategory(command.Name, command.ParentId));
+                    string slug = command.Name.Slugify();
+                    string Path = string.Empty;
+                    
+                    if (command.ParentId != 0)
+                    {
+                        var GetParent = repository.Get(command.ParentId);
+                        if(GetParent != null)
+                        {
+                            Path = GetParent.Slug;
+                            while (GetParent.ParentId!=0)
+                            {
+                                GetParent = repository.Get(GetParent.ParentId);
+                                if(GetParent!=null)
+                                    Path +="//"+ GetParent.Slug;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Path = command.Slug;
+                    }
+
+
+                    string PathPicture = fileUpload.Upload(command.Picture, Path);
+                    repository.Create(new ProducCategory(command.Name, command.ParentId, slug, command.Keyword, command.MetaDescription, command.Descrption,PathPicture));
                     unitOfWork.CommittTran();
                     return result.Success();
                 }
@@ -55,7 +80,35 @@ namespace ShopMangment.Application
             {
 
                 var Category = repository.Get(command.Id);
-                Category.Edit(command.Name, command.ParentId);
+                string slug = command.Name.Slugify();
+                string PathPicture = string.Empty;
+                if (command.Picture != null)
+                {
+                    string Path = string.Empty;
+
+                    if (command.ParentId != 0)
+                    {
+                        var GetParent = repository.Get(command.ParentId);
+                        if (GetParent != null)
+                        {
+                            Path = GetParent.Slug;
+                            while (GetParent.ParentId != 0)
+                            {
+                                GetParent = repository.Get(GetParent.ParentId);
+                                if (GetParent != null)
+                                    Path += "//" + GetParent.Slug;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Path = command.Slug;
+                    }
+
+
+                    PathPicture = fileUpload.Upload(command.Picture, Path);
+                }
+                Category.Edit(command.Name, command.ParentId, slug, command.Keyword, command.MetaDescription, command.Descrption,PathPicture);
                 unitOfWork.CommittTran();
                 return result.Success();
             }
@@ -77,7 +130,12 @@ namespace ShopMangment.Application
                     Name = producat.Name,
                     CreationDate = producat.CreationDate.ToString(),
                     IsRemoved = producat.IsRemoved,
-                    ParentId = producat.ParentId
+                    ParentId = producat.ParentId,
+                    Picture = producat.Picture,
+                    Descrption=producat.Descrption,
+                    Keyword=producat.Keyword,
+                    MetaDescription=producat.MetaDescription,
+                    Slug=producat.Slug
                 };
             }
             else
@@ -95,7 +153,12 @@ namespace ShopMangment.Application
                 Name = x.Name,
                 CreationDate = x.CreationDate.ToString(),
                 IsRemoved = x.IsRemoved,
-                ParentId = x.ParentId
+                ParentId = x.ParentId,
+                Picture = x.Picture,
+                Descrption = x.Descrption,
+                Keyword = x.Keyword,
+                MetaDescription = x.MetaDescription,
+                Slug = x.Slug
 
             }).ToList();
             return list;
@@ -128,18 +191,30 @@ namespace ShopMangment.Application
                                 Name = a.Name,
                                 ParentId = a.ParentId,
                                 IsRemoved = a.IsRemoved,
-                                CreationDate = a.CreationDate.ToString()
+                                CreationDate = a.CreationDate.ToString(),
+                                Picture = a.Picture,
+                                Descrption = a.Descrption,
+                                Keyword = a.Keyword,
+                                MetaDescription = a.MetaDescription,
+                                Slug = a.Slug
                             }).ToList();
                     return list;
 
                 }
             }
-            return query.ToList().Select(a=>new PrdouctCategoryViewModel{
+            return query.ToList().Select(a => new PrdouctCategoryViewModel
+            {
                 Id = a.Id,
                 Name = a.Name,
                 ParentId = a.ParentId,
                 IsRemoved = a.IsRemoved,
-                CreationDate = a.CreationDate.ToString() }).ToList();
+                CreationDate = a.CreationDate.ToString(),
+                Picture = a.Picture,
+                Descrption = a.Descrption,
+                Keyword = a.Keyword,
+                MetaDescription = a.MetaDescription,
+                Slug = a.Slug
+            }).ToList();
         }
     }
 }
