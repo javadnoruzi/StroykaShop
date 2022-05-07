@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AZHZtvK31ljBdsXcl6n2U8sTU7Zqb08/nJ9QmFDP6/NeOvPrKdN65IlGH6j6x0myqJdi61pfDvhS+P/dRmS4uQ==",
+  "dgSpecHash": "i0z70IRJbopbz5lAP1O4Wer6uRW4fe2kzHLkQzq9GXDci7zRikL7YjKPlhTu/y/UXuz3yLVytQ/7Xld+v/1ngg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Abolfazll\\source\\repos\\StroykaShop\\ShopMangment.Infrastructure.EfCore\\ShopMangment.Infrastructure.EfCore.csproj",
+  "projectFilePath": "c:\\Users\\Abolfazll\\source\\repos\\StroykaShop\\ShopMangment.Infrastructure.EfCore\\ShopMangment.Infrastructure.EfCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Abolfazll\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Abolfazll\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.16\\microsoft.aspnetcore.http.features.5.0.16.nupkg.sha512",

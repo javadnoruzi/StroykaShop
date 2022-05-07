@@ -31,5 +31,10 @@ namespace ShopMangment.Infrastructure.EfCore
         {
             context.Database.RollbackTransaction();
         }
+
+        public void SaveChanges()
+        {
+            context.SaveChanges();
+        }
     }
 }

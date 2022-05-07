@@ -1,12 +1,10 @@
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\bin\Debug\net5.0\ShopMangmnet.Domain.deps.json
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\bin\Debug\net5.0\ShopMangmnet.Domain.dll
-C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\bin\Debug\net5.0\ref\ShopMangmnet.Domain.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\bin\Debug\net5.0\ShopMangmnet.Domain.pdb
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\bin\Debug\net5.0\ShopMangment.Application.Contracts.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\bin\Debug\net5.0\StroykaShop.Framework.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\bin\Debug\net5.0\ShopMangment.Application.Contracts.pdb
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\bin\Debug\net5.0\StroykaShop.Framework.pdb
-C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\ShopMangmnet.Domain.csprojAssemblyReference.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\ShopMangmnet.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\ShopMangmnet.Domain.AssemblyInfoInputs.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\ShopMangmnet.Domain.AssemblyInfo.cs
@@ -15,3 +13,5 @@ C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\ShopMangmnet.Domain.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\ref\ShopMangmnet.Domain.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\ShopMangmnet.Domain.pdb
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\ShopMangmnet.Domain.csproj.AssemblyReference.cache
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\refint\ShopMangmnet.Domain.dll

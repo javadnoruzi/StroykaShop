@@ -10,7 +10,10 @@ namespace ShopMangment.Application.Contracts.ProductCategoryApp
         List<PrdouctCategoryViewModel> Search(ProductCategorySearchModel command);
         PrdouctCategoryViewModel Get(long id);
         List<PrdouctCategoryViewModel> GetAll();
-       
+        PrdouctCategoryViewModel GetParent(long id);
+        List<PrdouctCategoryViewModel> GetChildern(long id);
+
+        List<PrdouctCategoryViewModel> GetAllStartMenu();
 
     }
 

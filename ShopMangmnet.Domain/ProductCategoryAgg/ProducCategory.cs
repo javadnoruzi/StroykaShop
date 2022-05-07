@@ -1,4 +1,5 @@
-﻿using StroykaShop.Framework.Domain;
+﻿using ShopMangmnet.Domain.BrandAgg;
+using StroykaShop.Framework.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,8 @@ namespace ShopMangmnet.Domain.ProductCategoryAgg
         public string MetaDescription { get; private set; }
         public string Descrption { get; private set; }
         public string Picture { get; private set; }
-
+        public List<Brand> Brand { get; private set; }
+        protected ProducCategory(){}
         public ProducCategory(string name, long parentId, string slug, string keyword, string metaDescription, string descrption, string picture)
         {
             Name = name;

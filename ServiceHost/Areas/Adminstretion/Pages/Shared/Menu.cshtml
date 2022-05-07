@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!--- Sidemenu -->
+<div id="sidebar-menu">
+    <ul>
+        <li class="text-muted menu-title">دسته بندی ها</li>
+
+        <li>
+            <a asp-page="/Index" class="waves-effect"><i class="zmdi zmdi-view-dashboard"></i> <span> داشبورد </span> </a>
+        </li>
+
+       
+
+        <li class="has_sub">
+            <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-invert-colors"></i> <span> مدیریت فروشگاه </span> <span class="menu-arrow"></span></a>
+            <ul class="list-unstyled"> 
+                <li><a  asp-page="./ProductCategory/Index">مدیریت دسته بندی ها</a></li>
+                <li><a href="ui-buttons.html">مدیریت کالاها</a></li>
+                
+            </ul>
+        </li>
+
+       
+
+
+       
+
+      
+
+
+        
+
+      
+
+    </ul>
+    <div class="clearfix"></div>
+</div>
+<!-- Sidebar -->

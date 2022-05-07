@@ -17,6 +17,7 @@ namespace ShopMangment.Infrastructure.EfCore.Mapping
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Name).IsRequired();
             builder.Property(x => x.ParentId).IsRequired();
+            builder.HasMany(x=>x.Brand).WithOne(x=>x.Category).HasForeignKey(x=>x.CategoryId);
         }
     }
 }

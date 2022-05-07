@@ -1,0 +1,12 @@
+C:\Users\Abolfazll\source\repos\StroykaShop\StroykaQuery\bin\Debug\net5.0\StroykaQuery.deps.json
+C:\Users\Abolfazll\source\repos\StroykaShop\StroykaQuery\bin\Debug\net5.0\StroykaQuery.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\StroykaQuery\bin\Debug\net5.0\StroykaQuery.pdb
+C:\Users\Abolfazll\source\repos\StroykaShop\StroykaQuery\obj\Debug\net5.0\StroykaQuery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abolfazll\source\repos\StroykaShop\StroykaQuery\obj\Debug\net5.0\StroykaQuery.AssemblyInfoInputs.cache
+C:\Users\Abolfazll\source\repos\StroykaShop\StroykaQuery\obj\Debug\net5.0\StroykaQuery.AssemblyInfo.cs
+C:\Users\Abolfazll\source\repos\StroykaShop\StroykaQuery\obj\Debug\net5.0\StroykaQuery.csproj.CoreCompileInputs.cache
+C:\Users\Abolfazll\source\repos\StroykaShop\StroykaQuery\obj\Debug\net5.0\StroykaQuery.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\StroykaQuery\obj\Debug\net5.0\ref\StroykaQuery.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\StroykaQuery\obj\Debug\net5.0\StroykaQuery.pdb
+C:\Users\Abolfazll\source\repos\StroykaShop\StroykaQuery\obj\Debug\net5.0\StroykaQuery.csproj.AssemblyReference.cache
+C:\Users\Abolfazll\source\repos\StroykaShop\StroykaQuery\obj\Debug\net5.0\refint\StroykaQuery.dll

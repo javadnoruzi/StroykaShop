@@ -22,5 +22,15 @@ namespace ShopMangment.Infrastructure.EfCore.Repository
            
             return mangmentContext.ProducCategories.Where(x => x.Name.Contains(name)).ToList();
         }
+
+        public List<ProducCategory> GetChildern(long id)
+        {
+            return mangmentContext.ProducCategories.Where(x => x.ParentId==id).ToList();
+        }
+
+        public ProducCategory GetParent(long parentid)
+        {
+            return mangmentContext.ProducCategories.FirstOrDefault(x => x.ParentId == parentid);
+        }
     }
 }

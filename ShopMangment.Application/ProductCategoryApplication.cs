@@ -1,6 +1,7 @@
 ﻿using ShopMangment.Application.Contracts.ProductCategoryApp;
 using ShopMangmnet.Domain.ProductCategoryAgg;
 using StroykaShop.Framework;
+using StroykaShop.Framework.Application;
 using StroykaShop.Framework.Infrastructure;
 using System;
 using System.Collections.Generic;
@@ -55,6 +56,7 @@ namespace ShopMangment.Application
 
                     string PathPicture = fileUpload.Upload(command.Picture, Path);
                     repository.Create(new ProducCategory(command.Name, command.ParentId, slug, command.Keyword, command.MetaDescription, command.Descrption,PathPicture));
+                    unitOfWork.SaveChanges();
                     unitOfWork.CommittTran();
                     return result.Success();
                 }
@@ -109,6 +111,7 @@ namespace ShopMangment.Application
                     PathPicture = fileUpload.Upload(command.Picture, Path);
                 }
                 Category.Edit(command.Name, command.ParentId, slug, command.Keyword, command.MetaDescription, command.Descrption,PathPicture);
+                unitOfWork.SaveChanges();
                 unitOfWork.CommittTran();
                 return result.Success();
             }
@@ -128,7 +131,7 @@ namespace ShopMangment.Application
                 {
                     Id = producat.Id,
                     Name = producat.Name,
-                    CreationDate = producat.CreationDate.ToString(),
+                    CreationDate = producat.CreationDate.ToFarsi(),
                     IsRemoved = producat.IsRemoved,
                     ParentId = producat.ParentId,
                     Picture = producat.Picture,
@@ -151,7 +154,47 @@ namespace ShopMangment.Application
             {
                 Id = x.Id,
                 Name = x.Name,
-                CreationDate = x.CreationDate.ToString(),
+                CreationDate = x.CreationDate.ToFarsi(),
+                IsRemoved = x.IsRemoved,
+                ParentId = x.ParentId,
+                Picture = x.Picture,
+                Descrption = x.Descrption,
+                Keyword = x.Keyword,
+                MetaDescription = x.MetaDescription,
+                Slug = x.Slug,
+                Childerns = GetChildern(x.Id)
+
+            }).ToList();
+            return list;
+        }
+
+        public List<PrdouctCategoryViewModel> GetAllStartMenu()
+        {
+            var list = repository.GetAll().Where(x=>x.ParentId==0).Select(x => new PrdouctCategoryViewModel
+            {
+                Id = x.Id,
+                Name = x.Name,
+                CreationDate = x.CreationDate.ToFarsi(),
+                IsRemoved = x.IsRemoved,
+                ParentId = x.ParentId,
+                Picture = x.Picture,
+                Descrption = x.Descrption,
+                Keyword = x.Keyword,
+                MetaDescription = x.MetaDescription,
+                Slug = x.Slug,
+                Childerns = GetChildern(x.Id)
+
+            }).ToList();
+            return list;
+        }
+
+        public List<PrdouctCategoryViewModel> GetChildern(long id)
+        {
+            var list = repository.GetChildern(id).Select(x => new PrdouctCategoryViewModel
+            {
+                Id = x.Id,
+                Name = x.Name,
+                CreationDate = x.CreationDate.ToFarsi(),
                 IsRemoved = x.IsRemoved,
                 ParentId = x.ParentId,
                 Picture = x.Picture,
@@ -162,6 +205,24 @@ namespace ShopMangment.Application
 
             }).ToList();
             return list;
+        }
+
+        public PrdouctCategoryViewModel GetParent(long id)
+        {
+            ProducCategory producCategory= repository.GetParent(id);
+           return new PrdouctCategoryViewModel()
+            {
+                Id = producCategory.Id,
+                Name = producCategory.Name,
+                CreationDate = producCategory.CreationDate.ToFarsi(),
+                IsRemoved = producCategory.IsRemoved,
+                ParentId = producCategory.ParentId,
+                Picture = producCategory.Picture,
+                Descrption = producCategory.Descrption,
+                Keyword = producCategory.Keyword,
+                MetaDescription = producCategory.MetaDescription,
+                Slug = producCategory.Slug
+            };
         }
 
         public List<PrdouctCategoryViewModel> Search(ProductCategorySearchModel command)
@@ -191,7 +252,7 @@ namespace ShopMangment.Application
                                 Name = a.Name,
                                 ParentId = a.ParentId,
                                 IsRemoved = a.IsRemoved,
-                                CreationDate = a.CreationDate.ToString(),
+                                CreationDate = a.CreationDate.ToFarsi(),
                                 Picture = a.Picture,
                                 Descrption = a.Descrption,
                                 Keyword = a.Keyword,
@@ -208,7 +269,7 @@ namespace ShopMangment.Application
                 Name = a.Name,
                 ParentId = a.ParentId,
                 IsRemoved = a.IsRemoved,
-                CreationDate = a.CreationDate.ToString(),
+                CreationDate = a.CreationDate.ToFarsi(),
                 Picture = a.Picture,
                 Descrption = a.Descrption,
                 Keyword = a.Keyword,

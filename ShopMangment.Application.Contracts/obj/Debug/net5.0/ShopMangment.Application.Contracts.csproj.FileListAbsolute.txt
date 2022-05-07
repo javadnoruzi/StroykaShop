@@ -1,10 +1,8 @@
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\bin\Debug\net5.0\ShopMangment.Application.Contracts.deps.json
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\bin\Debug\net5.0\ShopMangment.Application.Contracts.dll
-C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\bin\Debug\net5.0\ref\ShopMangment.Application.Contracts.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\bin\Debug\net5.0\ShopMangment.Application.Contracts.pdb
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\bin\Debug\net5.0\StroykaShop.Framework.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\bin\Debug\net5.0\StroykaShop.Framework.pdb
-C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\obj\Debug\net5.0\ShopMangment.Application.Contracts.csprojAssemblyReference.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\obj\Debug\net5.0\ShopMangment.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\obj\Debug\net5.0\ShopMangment.Application.Contracts.AssemblyInfoInputs.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\obj\Debug\net5.0\ShopMangment.Application.Contracts.AssemblyInfo.cs
@@ -13,3 +11,5 @@ C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\o
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\obj\Debug\net5.0\ShopMangment.Application.Contracts.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\obj\Debug\net5.0\ref\ShopMangment.Application.Contracts.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\obj\Debug\net5.0\ShopMangment.Application.Contracts.pdb
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\obj\Debug\net5.0\ShopMangment.Application.Contracts.csproj.AssemblyReference.cache
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application.Contracts\obj\Debug\net5.0\refint\ShopMangment.Application.Contracts.dll

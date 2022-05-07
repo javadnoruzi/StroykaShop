@@ -1,4 +1,6 @@
-﻿namespace ShopMangment.Application.Contracts.ProductCategoryApp
+﻿using System.Collections.Generic;
+
+namespace ShopMangment.Application.Contracts.ProductCategoryApp
 {
     public class PrdouctCategoryViewModel
     {
@@ -12,6 +14,7 @@
         public string MetaDescription { get;  set; }
         public string Descrption { get;  set; }
         public string Picture { get; set; }
+        public List<PrdouctCategoryViewModel> Childerns { get; set; }
 
     }
 

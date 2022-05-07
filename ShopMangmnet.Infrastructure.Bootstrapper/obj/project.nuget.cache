@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VN5rxl3OjYAaH+X1dZRc6FXffv9Lmb4dKwq5Ic7wCFsiOtD1CDsH0CbiJxgfmzsO2Ds98oNT8CbVMYCmQ7XrLQ==",
+  "dgSpecHash": "bvywGYp1M/utwHQVG2JcyGeeZCneYEIaU3nBEhev6LJTrjexktyDcRNZgtBr73TDUj83DIxqmjIxSM5+2+aFfQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Abolfazll\\source\\repos\\StroykaShop\\ShopMangmnet.Infrastructure.Bootstrapper\\ShopMangmnet.Infrastructure.Bootstrapper.csproj",
+  "projectFilePath": "c:\\Users\\Abolfazll\\source\\repos\\StroykaShop\\ShopMangmnet.Infrastructure.Bootstrapper\\ShopMangmnet.Infrastructure.Bootstrapper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Abolfazll\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.16\\microsoft.aspnetcore.http.features.5.0.16.nupkg.sha512",
     "C:\\Users\\Abolfazll\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

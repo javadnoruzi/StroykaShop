@@ -11,5 +11,7 @@ namespace ShopMangmnet.Domain.ProductCategoryAgg
    public interface IProductCategoryRepository:IRepository<long,ProducCategory> 
     {
         List<ProductCategoryAgg.ProducCategory> Get(string name);
+        List<ProductCategoryAgg.ProducCategory> GetChildern(long id);
+        ProductCategoryAgg.ProducCategory GetParent(long parentid);
     }
 }

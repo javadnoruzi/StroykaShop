@@ -1,8 +1,6 @@
 C:\Users\Abolfazll\source\repos\StroykaShop\StroykaShop.Framework\bin\Debug\net5.0\StroykaShop.Framework.deps.json
 C:\Users\Abolfazll\source\repos\StroykaShop\StroykaShop.Framework\bin\Debug\net5.0\StroykaShop.Framework.dll
-C:\Users\Abolfazll\source\repos\StroykaShop\StroykaShop.Framework\bin\Debug\net5.0\ref\StroykaShop.Framework.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\StroykaShop.Framework\bin\Debug\net5.0\StroykaShop.Framework.pdb
-C:\Users\Abolfazll\source\repos\StroykaShop\StroykaShop.Framework\obj\Debug\net5.0\StroykaShop.Framework.csprojAssemblyReference.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\StroykaShop.Framework\obj\Debug\net5.0\StroykaShop.Framework.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Abolfazll\source\repos\StroykaShop\StroykaShop.Framework\obj\Debug\net5.0\StroykaShop.Framework.AssemblyInfoInputs.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\StroykaShop.Framework\obj\Debug\net5.0\StroykaShop.Framework.AssemblyInfo.cs
@@ -10,3 +8,5 @@ C:\Users\Abolfazll\source\repos\StroykaShop\StroykaShop.Framework\obj\Debug\net5
 C:\Users\Abolfazll\source\repos\StroykaShop\StroykaShop.Framework\obj\Debug\net5.0\StroykaShop.Framework.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\StroykaShop.Framework\obj\Debug\net5.0\ref\StroykaShop.Framework.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\StroykaShop.Framework\obj\Debug\net5.0\StroykaShop.Framework.pdb
+C:\Users\Abolfazll\source\repos\StroykaShop\StroykaShop.Framework\obj\Debug\net5.0\StroykaShop.Framework.csproj.AssemblyReference.cache
+C:\Users\Abolfazll\source\repos\StroykaShop\StroykaShop.Framework\obj\Debug\net5.0\refint\StroykaShop.Framework.dll

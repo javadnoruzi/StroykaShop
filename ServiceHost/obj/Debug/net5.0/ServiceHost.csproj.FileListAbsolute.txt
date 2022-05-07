@@ -5,7 +5,6 @@ C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\Service
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\ServiceHost.runtimeconfig.json
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\ServiceHost.runtimeconfig.dev.json
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\ServiceHost.dll
-C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\ref\ServiceHost.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\ServiceHost.pdb
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\ServiceHost.Views.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\ServiceHost.Views.pdb
@@ -47,7 +46,6 @@ C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\ShopMan
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\ShopMangment.Infrastructure.EfCore.pdb
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\ShopMangmnet.Domain.pdb
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\StroykaShop.Framework.pdb
-C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\ServiceHost.csprojAssemblyReference.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\ServiceHost.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\ServiceHost.AssemblyInfoInputs.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\ServiceHost.AssemblyInfo.cs
@@ -56,7 +54,6 @@ C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\Service
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\ServiceHost.RazorAssemblyInfo.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\ServiceHost.RazorAssemblyInfo.cs
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\staticwebassets\ServiceHost.StaticWebAssets.Manifest.cache
-C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\staticwebassets\ServiceHost.StaticWebAssets.xml
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\scopedcss\bundle\ServiceHost.styles.css
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\ServiceHost.TagHelpers.input.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\ServiceHost.TagHelpers.output.cache
@@ -83,3 +80,14 @@ C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\ref\Ser
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\ServiceHost.pdb
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\ServiceHost.genruntimeconfig.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Adminstretion\Pages\ProductCategory\Index.cshtml.g.cs
+C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\System.IO.Pipelines.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\ShopMangment.Application.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\ShopMangment.Application.pdb
+C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Adminstretion\Pages\Shared\Menu.cshtml.g.cs
+C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\Razor\Areas\Adminstretion\Pages\ProductCategory\Create.cshtml.g.cs
+C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\ServiceHost.csproj.AssemblyReference.cache
+C:\Users\Abolfazll\source\repos\StroykaShop\ServiceHost\obj\Debug\net5.0\refint\ServiceHost.dll

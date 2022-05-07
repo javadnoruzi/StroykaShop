@@ -11,5 +11,6 @@ namespace StroykaShop.Framework.Infrastructure
         void BeginTrann();
         void CommittTran();
         void RollBackTran();
+        void SaveChanges();
     }
 }

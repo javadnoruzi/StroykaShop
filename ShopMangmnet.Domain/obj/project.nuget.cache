@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UUvAUMkn6QeUu9/ZL6JIIZuOQu/hZuI2slMRM8amQwy2J8HMdNxHJwKPVtchIKj1w1jHWUM2KEgqIxsMzENA/g==",
+  "dgSpecHash": "xN7iBu6yplpDA+hiqrFSg5Jv8jbu7uW+I/uqVR0dRQga71F3IdELcoEuIomdGFRzW2wPgaaOboXWmxdZHXjITg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Abolfazll\\source\\repos\\StroykaShop\\ShopMangmnet.Domain\\ShopMangmnet.Domain.csproj",
+  "projectFilePath": "c:\\Users\\Abolfazll\\source\\repos\\StroykaShop\\ShopMangmnet.Domain\\ShopMangmnet.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Abolfazll\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.16\\microsoft.aspnetcore.http.features.5.0.16.nupkg.sha512",
     "C:\\Users\\Abolfazll\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0\\microsoft.entityframeworkcore.5.0.0.nupkg.sha512",

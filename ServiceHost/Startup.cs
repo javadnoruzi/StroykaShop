@@ -1,3 +1,4 @@
+using AccountMangment.Infrastructure.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -20,8 +21,9 @@ namespace ServiceHost
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var ConnectinString = Configuration.GetConnectionString("");
+            var ConnectinString = Configuration.GetConnectionString("EfCore");
             ShopMangmentBootstapperr.Configure(services, ConnectinString);
+            AccountMangmentBootstrapper.Configur(services,ConnectinString);
             services.AddSingleton<IFileUpload, FileUpload>();
             services.AddRazorPages();
         }
