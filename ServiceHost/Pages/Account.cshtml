@@ -1,0 +1,125 @@
+﻿@page
+@model AccountModel
+@inject StroykaShop.Framework.Application.IAuthHelper AuthHelper
+@{
+    ViewData["Title"] = "ورود| ثبت نام";
+}
+
+<div class="page-header">
+    <div class="page-header__container container">
+        <div class="page-header__breadcrumb">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    @*<li class="breadcrumb-item">
+                        <a href="index-2.html">خانه</a>
+                        <svg class="breadcrumb-arrow" width="6px" height="9px">
+                            <use xlink:href="~/Theme/images/sprite.svg#arrow-rounded-right-6x9"></use>
+                        </svg>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">تکه مسیر</a>
+                        <svg class="breadcrumb-arrow" width="6px" height="9px">
+                            <use xlink:href="~/Theme/images/sprite.svg#arrow-rounded-right-6x9"></use>
+                        </svg>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">حساب کاربری</li>*@
+                </ol>
+            </nav>
+        </div>
+        <div class="page-header__title">
+            <h1>حساب کاربری</h1>
+        </div>
+    </div>
+</div>
+<div class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex">
+                <div class="card flex-grow-1 mb-md-0">
+                    <div class="card-body">
+                        <h3 class="card-title">ورود</h3>
+                        @if (Model.LoginMessage != null)
+                        {
+                            <div class="panel-danger bg-danger">
+                                @Model.LoginMessage
+                            </div>
+                        }
+                        <form method="post">
+                            <div class="form-group">
+                                <span asp-validation-for="login.UserName" class="text-danger"></span>
+                                <label asp-for="login.UserName">نام کاربری یا ایمیل</label>
+                                <input type="text" asp-for="login.UserName" name="UserName" class="form-control" placeholder="ایمیل  یا نام کاربری را وارد کنید">
+
+                            </div>
+                            <div class="form-group">
+                                <span asp-validation-for="login.Password" class="text-danger"></span>
+                                <label asp-for="login.Password">رمز عبور</label>
+                                <input type="password" asp-for="login.Password" name="Password" class="form-control" placeholder="رمز عبور را وارد کنید"> <small class="form-text text-muted"><a href="#">فراموشی رمز عبور</a></small>
+
+                            </div>
+                            @*<div class="form-group">
+                                <div class="form-check">
+                                    <span class="form-check-input input-check">
+                                        <span class="input-check__body">
+                                            <input class="input-check__input" type="checkbox" id="login-remember"> <span class="input-check__box"></span>
+                                            <svg class="input-check__icon" width="9px" height="7px">
+                                                <use xlink:href="~/Theme/images/sprite.svg#check-9x7"></use>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                    <label class="form-check-label" for="login-remember">به خاطر سپاری</label>
+                                </div>
+                            </div>*@
+                            <button type="submit"  class="btn btn-primary mt-4">ورود</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex mt-4 mt-md-0">
+                <div class="card flex-grow-1 mb-0">
+                    <div class="card-body">
+                        <h3 class="card-title">ثبت نام</h3>
+                        @if (Model.RegisterMessage != null)
+                        {
+                            <div class="panel-danger bg-danger ">
+                                @Model.RegisterMessage
+                            </div>
+                        }
+
+                    <form method="post">
+                        <div class="form-group">
+                            <label asp-for="createAccount.Email">آدرس ایمیل</label>
+                            <input type="email" asp-for="createAccount.Email" name="Email" id="Email" class="form-control" placeholder="ایمیل  را وارد کنید">
+                            <span asp-validation-for="createAccount.Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="createAccount.UserName">نام کاربری</label>
+                            <input type="text" asp-for="createAccount.UserName" name="UserName" class="form-control" placeholder="نام کاربری  را وارد کنید">
+                            <span asp-validation-for="createAccount.UserName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="createAccount.Password">رمز عبور</label>
+                            <input type="password" asp-for="createAccount.Password" name="Password" class="form-control" placeholder="رمز عبور را وارد کنید">
+                            <span asp-validation-for="createAccount.Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>تکرار رمز عبور</label>
+                            <input type="password" asp-for="createAccount.RePassword" name="RePassword" class="form-control" placeholder="تکرار رمز عبور را وارد کنید">
+                            <span asp-validation-for="createAccount.RePassword" class="text-danger"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-4" asp-page-handler="Register">ثبت نام</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Script {
+    <script>
+        $("#departments").removeClass("departments--opened");
+        $("#departments").removeClass("departments--fixed");
+        $("#departments").attr("data-departments-fixed-by", "")
+    </script>
+
+}

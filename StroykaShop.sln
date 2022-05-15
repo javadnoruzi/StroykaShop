@@ -9,43 +9,47 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SK.Domain", "SK.Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SK.Application", "SK.Application", "{BEAC1C7A-AF39-4241-9862-9C539240FFC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopMangmnet.Domain", "ShopMangmnet.Domain\ShopMangmnet.Domain.csproj", "{B0B30A20-49EC-4DD5-9062-3DA7B107CB83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMangmnet.Domain", "ShopMangmnet.Domain\ShopMangmnet.Domain.csproj", "{B0B30A20-49EC-4DD5-9062-3DA7B107CB83}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_FrameWork", "01_FrameWork", "{9463450C-6934-4C16-8214-EDC9F80199B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StroykaShop.Framework", "StroykaShop.Framework\StroykaShop.Framework.csproj", "{6EDCA24B-3358-41C5-B55D-5E200D185B32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StroykaShop.Framework", "StroykaShop.Framework\StroykaShop.Framework.csproj", "{6EDCA24B-3358-41C5-B55D-5E200D185B32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopMangment.Application.Contracts", "ShopMangment.Application.Contracts\ShopMangment.Application.Contracts.csproj", "{8EB42574-42AD-4F63-9EA7-0E97C6624828}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMangment.Application.Contracts", "ShopMangment.Application.Contracts\ShopMangment.Application.Contracts.csproj", "{8EB42574-42AD-4F63-9EA7-0E97C6624828}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopMangment.Application", "ShopMangment.Application\ShopMangment.Application.csproj", "{916DF295-3922-40BD-90F4-055B91072E17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMangment.Application", "ShopMangment.Application\ShopMangment.Application.csproj", "{916DF295-3922-40BD-90F4-055B91072E17}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SK.Infrastructre", "SK.Infrastructre", "{FB9E80BE-2124-4600-A009-80C47D0DA18B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopMangment.Infrastructure.EfCore", "ShopMangment.Infrastructure.EfCore\ShopMangment.Infrastructure.EfCore.csproj", "{F47B90AF-5CE9-4242-B78C-731D6E8D3B7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMangment.Infrastructure.EfCore", "ShopMangment.Infrastructure.EfCore\ShopMangment.Infrastructure.EfCore.csproj", "{F47B90AF-5CE9-4242-B78C-731D6E8D3B7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopMangmnet.Infrastructure.Bootstrapper", "ShopMangmnet.Infrastructure.Bootstrapper\ShopMangmnet.Infrastructure.Bootstrapper.csproj", "{64D98107-73F7-4DB1-B5CB-DB95DBBF0DEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopMangmnet.Infrastructure.Bootstrapper", "ShopMangmnet.Infrastructure.Bootstrapper\ShopMangmnet.Infrastructure.Bootstrapper.csproj", "{64D98107-73F7-4DB1-B5CB-DB95DBBF0DEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{3FE6D4AF-288E-4C01-88E2-23AC207F2C73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceHost", "ServiceHost\ServiceHost.csproj", "{3FE6D4AF-288E-4C01-88E2-23AC207F2C73}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00_StroykaQuery", "00_StroykaQuery", "{B3AB0375-2A40-4387-8626-FBB3A0481E2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StroykaQuery", "StroykaQuery\StroykaQuery.csproj", "{273D1CD4-C42F-4DF4-BC2F-11D7A1A76E53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StroykaQuery", "StroykaQuery\StroykaQuery.csproj", "{273D1CD4-C42F-4DF4-BC2F-11D7A1A76E53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountMangment.Application.Contract", "AccountMangment.Application.Contract\AccountMangment.Application.Contract.csproj", "{B99FEF41-4F3C-4AD1-8215-853129D846C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountMangment.Application.Contract", "AccountMangment.Application.Contract\AccountMangment.Application.Contract.csproj", "{B99FEF41-4F3C-4AD1-8215-853129D846C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountMangment.Application", "AccountMangment.Application\AccountMangment.Application.csproj", "{89E30D11-BB55-4E8C-B7BD-7C06B7F14ED7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountMangment.Application", "AccountMangment.Application\AccountMangment.Application.csproj", "{89E30D11-BB55-4E8C-B7BD-7C06B7F14ED7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountMangment.Domain", "AccountMangment.Domain", "{A4AE1B0D-3A83-49D7-961E-DFE6A621783A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountMangment.Domain", "AccountMangment.Domain\AccountMangment.Domain.csproj", "{2A2EE323-519D-454D-91A0-C417A511CFB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountMangment.Domain", "AccountMangment.Domain\AccountMangment.Domain.csproj", "{2A2EE323-519D-454D-91A0-C417A511CFB4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountMangment.Infrastructure.EfCore", "AccountMangment.Infrastructure.EfCore", "{89C5A32A-7FDB-48AE-8889-64FE6C728BBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountMangment.Infrastructure.EfCore", "AccountMangment.Infrastructure.EfCore\AccountMangment.Infrastructure.EfCore.csproj", "{CD4EF6AF-1BB4-4BAE-A5EE-05D16F8EAB75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountMangment.Infrastructure.EfCore", "AccountMangment.Infrastructure.EfCore\AccountMangment.Infrastructure.EfCore.csproj", "{CD4EF6AF-1BB4-4BAE-A5EE-05D16F8EAB75}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountMangment.Infrastructure.Configuration", "AccountMangment.Infrastructure.Configuration", "{D7E5C6CE-3473-48D3-9762-35F0512334FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountMangmentBootstrapper", "AccountMangment.Infrastructure.Configuration\AccountMangmentBootstrapper.csproj", "{32B72F5A-5422-4FFC-8F13-1BFC594AE895}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountMangmentBootstrapper", "AccountMangment.Infrastructure.Configuration\AccountMangmentBootstrapper.csproj", "{32B72F5A-5422-4FFC-8F13-1BFC594AE895}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountMangment", "AccountMangment", "{441B5F12-28E1-4DCE-8434-CFF3824A71B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountMangment.Application", "AccountMangment.Application", "{D8BBBAEF-B8BF-4D6A-8C84-BF41650F39B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -120,9 +124,15 @@ Global
 		{F47B90AF-5CE9-4242-B78C-731D6E8D3B7F} = {FB9E80BE-2124-4600-A009-80C47D0DA18B}
 		{64D98107-73F7-4DB1-B5CB-DB95DBBF0DEB} = {FB9E80BE-2124-4600-A009-80C47D0DA18B}
 		{273D1CD4-C42F-4DF4-BC2F-11D7A1A76E53} = {B3AB0375-2A40-4387-8626-FBB3A0481E2D}
+		{B99FEF41-4F3C-4AD1-8215-853129D846C5} = {D8BBBAEF-B8BF-4D6A-8C84-BF41650F39B6}
+		{89E30D11-BB55-4E8C-B7BD-7C06B7F14ED7} = {D8BBBAEF-B8BF-4D6A-8C84-BF41650F39B6}
+		{A4AE1B0D-3A83-49D7-961E-DFE6A621783A} = {441B5F12-28E1-4DCE-8434-CFF3824A71B4}
 		{2A2EE323-519D-454D-91A0-C417A511CFB4} = {A4AE1B0D-3A83-49D7-961E-DFE6A621783A}
+		{89C5A32A-7FDB-48AE-8889-64FE6C728BBC} = {441B5F12-28E1-4DCE-8434-CFF3824A71B4}
 		{CD4EF6AF-1BB4-4BAE-A5EE-05D16F8EAB75} = {89C5A32A-7FDB-48AE-8889-64FE6C728BBC}
+		{D7E5C6CE-3473-48D3-9762-35F0512334FA} = {441B5F12-28E1-4DCE-8434-CFF3824A71B4}
 		{32B72F5A-5422-4FFC-8F13-1BFC594AE895} = {D7E5C6CE-3473-48D3-9762-35F0512334FA}
+		{D8BBBAEF-B8BF-4D6A-8C84-BF41650F39B6} = {441B5F12-28E1-4DCE-8434-CFF3824A71B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D09A06A-33CE-4D6B-9E50-4770D0CD5EBB}

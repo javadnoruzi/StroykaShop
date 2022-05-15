@@ -13,5 +13,5 @@ C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\ShopMangmnet.Domain.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\ref\ShopMangmnet.Domain.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\ShopMangmnet.Domain.pdb
-C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\ShopMangmnet.Domain.csproj.AssemblyReference.cache
-C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\refint\ShopMangmnet.Domain.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\bin\Debug\net5.0\ref\ShopMangmnet.Domain.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Domain\obj\Debug\net5.0\ShopMangmnet.Domain.csprojAssemblyReference.cache

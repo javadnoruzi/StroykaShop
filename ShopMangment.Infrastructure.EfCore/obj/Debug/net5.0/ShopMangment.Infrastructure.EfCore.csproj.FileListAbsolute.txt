@@ -18,5 +18,5 @@ C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Infrastructure.EfCore\o
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Infrastructure.EfCore\obj\Debug\net5.0\ref\ShopMangment.Infrastructure.EfCore.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Infrastructure.EfCore\obj\Debug\net5.0\ShopMangment.Infrastructure.EfCore.pdb
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Infrastructure.EfCore\obj\Debug\net5.0\ShopMangment.Infrastructure.EfCore.genruntimeconfig.cache
-C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Infrastructure.EfCore\obj\Debug\net5.0\ShopMangment.Infrastructure.EfCore.csproj.AssemblyReference.cache
-C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Infrastructure.EfCore\obj\Debug\net5.0\refint\ShopMangment.Infrastructure.EfCore.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Infrastructure.EfCore\bin\Debug\net5.0\ref\ShopMangment.Infrastructure.EfCore.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Infrastructure.EfCore\obj\Debug\net5.0\ShopMangment.Infrastructure.EfCore.csprojAssemblyReference.cache

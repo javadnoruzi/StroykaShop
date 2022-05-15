@@ -15,5 +15,5 @@ C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application\obj\Debug\n
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application\obj\Debug\net5.0\ShopMangment.Application.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application\obj\Debug\net5.0\ref\ShopMangment.Application.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application\obj\Debug\net5.0\ShopMangment.Application.pdb
-C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application\obj\Debug\net5.0\ShopMangment.Application.csproj.AssemblyReference.cache
-C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application\obj\Debug\net5.0\refint\ShopMangment.Application.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application\bin\Debug\net5.0\ref\ShopMangment.Application.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangment.Application\obj\Debug\net5.0\ShopMangment.Application.csprojAssemblyReference.cache

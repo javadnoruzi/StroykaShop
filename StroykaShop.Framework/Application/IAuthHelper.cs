@@ -1,4 +1,6 @@
 
+using System.Collections.Generic;
+
 namespace StroykaShop.Framework.Application
 {
     public interface IAuthHelper
@@ -6,6 +8,8 @@ namespace StroykaShop.Framework.Application
          void SignIn(AuthViewModel account);
          void SignOut();
          bool ISVeriFired();
+        AuthViewModel Getinfo();
+        List<int> GetPermissions();
     }
 
 }

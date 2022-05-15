@@ -19,5 +19,5 @@ C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Infrastructure.Bootstra
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Infrastructure.Bootstrapper\obj\Debug\net5.0\ShopMangmnet.Infrastructure.Bootstrapper.pdb
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Infrastructure.Bootstrapper\bin\Debug\net5.0\ShopMangment.Application.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Infrastructure.Bootstrapper\bin\Debug\net5.0\ShopMangment.Application.pdb
-C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Infrastructure.Bootstrapper\obj\Debug\net5.0\ShopMangmnet.Infrastructure.Bootstrapper.csproj.AssemblyReference.cache
-C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Infrastructure.Bootstrapper\obj\Debug\net5.0\refint\ShopMangmnet.Infrastructure.Bootstrapper.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Infrastructure.Bootstrapper\bin\Debug\net5.0\ref\ShopMangmnet.Infrastructure.Bootstrapper.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\ShopMangmnet.Infrastructure.Bootstrapper\obj\Debug\net5.0\ShopMangmnet.Infrastructure.Bootstrapper.csprojAssemblyReference.cache
