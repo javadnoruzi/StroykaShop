@@ -9,7 +9,7 @@ namespace AccountMangment.Infrastructure.EfCore.Mapping
         {
             builder.ToTable("Accounts");
             builder.HasKey(x=>x.Id);
-            
+            builder.HasOne(x => x.Role).WithMany(x => x.Accounts).HasForeignKey(x => x.RoleId);
         }
     }
 }

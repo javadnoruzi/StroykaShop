@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using StroykaShop.Framework.Domain;
 
 namespace AccountMangment.Domain.AccountAgg
@@ -11,8 +9,9 @@ namespace AccountMangment.Domain.AccountAgg
         public string Password { get; private set; }
         public long RoleId { get; private set; }
         public string Mobile { get; private set; }
+        public string Email { get; private set; }
         public string ProfilePhoto { get; private set; }
-
+        public RoleAgg.Role Role { get; set; }
         protected Account() { }
 
         public Account(
@@ -21,15 +20,20 @@ namespace AccountMangment.Domain.AccountAgg
             string password,
             long roleId,
             string mobile,
-            string profilePhoto
-        )
+            string profilePhoto,
+            string email)
         {
             this.FullName = fullName;
             this.UserName = userName;
             this.Password = password;
             this.RoleId = roleId;
+            if (roleId==0)
+                this.RoleId = 2;
+
+
             this.Mobile = mobile;
             this.ProfilePhoto = profilePhoto;
+            Email = email;
         }
 
         public void Edit(
@@ -38,8 +42,8 @@ namespace AccountMangment.Domain.AccountAgg
             string password,
             long roleId,
             string mobile,
-            string profilePhoto
-        )
+            string profilePhoto,
+            string email)
         {
             this.FullName = fullName;
             this.UserName = userName;
@@ -47,11 +51,13 @@ namespace AccountMangment.Domain.AccountAgg
             this.RoleId = roleId;
             this.Mobile = mobile;
             this.ProfilePhoto = profilePhoto;
+            Email = email;
         }
 
-        public void ChangePassword(string password) {
-        Password=password;
+        public void ChangePassword(string password)
+        {
+            Password = password;
 
-         }
+        }
     }
 }

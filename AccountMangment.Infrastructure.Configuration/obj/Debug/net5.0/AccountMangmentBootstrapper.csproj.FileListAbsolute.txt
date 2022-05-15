@@ -1,4 +1,3 @@
-C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Infrastructure.Configuration\obj\Debug\net5.0\AccountMangmentBootstrapper.csproj.AssemblyReference.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Infrastructure.Configuration\obj\Debug\net5.0\AccountMangmentBootstrapper.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Infrastructure.Configuration\obj\Debug\net5.0\AccountMangmentBootstrapper.AssemblyInfoInputs.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Infrastructure.Configuration\obj\Debug\net5.0\AccountMangmentBootstrapper.AssemblyInfo.cs
@@ -20,7 +19,8 @@ C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Infrastructure.Confi
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Infrastructure.Configuration\bin\Debug\net5.0\AccountMangment.Application.pdb
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Infrastructure.Configuration\obj\Debug\net5.0\AccountMangmentBootstrapper.csproj.CopyComplete
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Infrastructure.Configuration\obj\Debug\net5.0\AccountMangmentBootstrapper.dll
-C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Infrastructure.Configuration\obj\Debug\net5.0\refint\AccountMangmentBootstrapper.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Infrastructure.Configuration\obj\Debug\net5.0\AccountMangmentBootstrapper.pdb
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Infrastructure.Configuration\obj\Debug\net5.0\AccountMangmentBootstrapper.genruntimeconfig.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Infrastructure.Configuration\obj\Debug\net5.0\ref\AccountMangmentBootstrapper.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Infrastructure.Configuration\bin\Debug\net5.0\ref\AccountMangmentBootstrapper.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Infrastructure.Configuration\obj\Debug\net5.0\AccountMangmentBootstrapper.csprojAssemblyReference.cache

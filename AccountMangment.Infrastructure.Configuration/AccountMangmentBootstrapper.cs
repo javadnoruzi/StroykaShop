@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AccountMangment.Infrastructure.Configuration
 {
-    public class AccountMangmentBootstrapper
+    public class AccountMangmentBootstrapperr
     {
         public static void Configur(IServiceCollection services,string ConnectionString){
           services.AddTransient<IUnitofWork,UnitOfWork>();

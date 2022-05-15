@@ -1,0 +1,208 @@
+﻿@page
+@model Areas.Adminstretion.Pages.Shop.ProductCategory.Shop.CreateModel
+@{
+    ViewData["Title"] = "ایجاد دسته بندی";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card-box">
+            <form method="post" data-ajax="true"
+                  data-callback=""
+                  data-action="Refresh"
+                  enctype="multipart/form-data">
+                <div class="form-group alert-danger">
+                    @if (Model.Message != null)
+                    {
+                        <h3>Model.Message</h3>
+                    }
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="createPrdouctCategory.Name" class="control-label">نام دسته بندی *</label>
+                            <input type="text" asp-for="createPrdouctCategory.Name" class="form-control" id="Name" placeholder="نام دسته بندی را وارد کنید">
+                            <span asp-validation-for="createPrdouctCategory.Name" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="createPrdouctCategory.Keyword" class="control-label">کلمات کلیدی</label>
+                            <input type="text" asp-for="createPrdouctCategory.Keyword" class="form-control" id="Keyword" placeholder="کلمات کلیدی دسته بندی را وارد کنید">
+                            <span asp-validation-for="createPrdouctCategory.Keyword" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="createPrdouctCategory.MetaDescription" class="control-label">توضیح کوتاه</label>
+                            <input type="text" asp-for="createPrdouctCategory.MetaDescription" class="form-control" id="MetaDescription" placeholder="MetaDescription دسته بندی را وارد کنید">
+                            <span asp-validation-for="createPrdouctCategory.MetaDescription" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="createPrdouctCategory.Descrption" class="control-label">توضیحات</label>
+                            <textarea asp-for="createPrdouctCategory.Descrption" class="form-control" id="Descrption" placeholder="توضیحات دسته بندی را وارد کنید"></textarea>
+                            <span asp-validation-for="createPrdouctCategory.Descrption" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="createPrdouctCategory.ParentId" class="control-label">دسته بندی</label>
+                            <div id="dragTree">
+                                <ul>
+                                      <li data-jstree='{"type":"file"}' id="0" >
+                                            دسته بندی جدید
+                                            </li>
+                                    @foreach (var item in Model.categoryViewModels)
+                                    {
+                                        if (item.Childerns == null || item.Childerns.Count == 0)
+                                        {
+                                            <li data-jstree='{"type":"file"}' id="@item.Id" >
+                                                @item.Name
+                                            </li>
+
+                                            continue;
+                                        }
+                                        if (item.Childerns.Count > 0)
+                                        {
+                                            <li data-jstree='{"opened":true}' id="@item.Id" >
+                                                @item.Name
+                                                <ul>
+                                                    @foreach (var item2 in item.Childerns)
+                                                    {
+
+                                                        var item2child = Model.Getlist(item2.Id);
+                                                        if (item2child == null || item2child.Count == 0)
+                                                        {
+                                                            <li data-jstree='{"type":"file"}' id="@item2.Id" >
+                                                                @item2.Name
+                                                            </li>
+
+                                                            continue;
+                                                        }
+                                                        if (item2child.Count > 0)
+                                                        {
+                                                            <li data-jstree='{"type":"file"}' id="@item2.Id">
+                                                                @item2.Name
+                                                                <ul>
+                                                                    @foreach (var item3 in item2child)
+                                                                    {
+                                                                        var item3child = Model.Getlist(item3.Id);
+                                                                        if (item3child == null || item3child.Count == 0)
+                                                                        {
+                                                                            <li data-jstree='{"type":"file"}' id="@item3.Id">
+                                                                                @item2.Name
+                                                                            </li>
+
+                                                                            continue;
+                                                                        }
+                                                                        if (item3child.Count > 0)
+                                                                        {
+                                                                            <li data-jstree='{"type":"file"}' id="@item3.Id">
+                                                                                @item3.Name
+                                                                                <ul>
+                                                                                    @foreach (var ss in item3child)
+                                                                                    {
+                                                                                        <li data-jstree='{"type":"file"}' id="@ss.Id">@ss.Name</li>
+
+                                                                                    }
+                                                                                </ul>
+                                                                            </li>
+                                                                        }
+                                                                    }
+                                                                </ul>
+                                                            </li>
+                                                        }
+
+                                                    }
+                                                </ul>
+                                            </li>
+                                        }
+                                    }
+
+                                </ul>
+                            </div>
+                            <input type="hidden" asp-for="createPrdouctCategory.ParentId" />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="createPrdouctCategory.Picture" class="control-label">عکس دسته بندی</label>
+                            <input type="file" class="dropify" asp-for="createPrdouctCategory.Picture" accept="image/*" />
+                            <span asp-validation-for="createPrdouctCategory.Picture" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-purple waves-effect waves-light">ثبت</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+@section Script{
+    <!-- Editable js -->
+    <script src="~/AdminThem/assets/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="~/AdminThem/assets/plugins/jquery-datatables-editable/jquery.dataTables.js"></script>
+    <script src="~/AdminThem/assets/plugins/datatables/dataTables.bootstrap.js"></script>
+    <script src="~/AdminThem/assets/plugins/tiny-editable/mindmup-editabletable.js"></script>
+    <script src="~/AdminThem/assets/plugins/tiny-editable/numeric-input-example.js"></script>
+
+    <!-- init -->
+    <!-- file uploads js -->
+    <script src="~/AdminThem/assets/plugins/fileuploads/js/dropify.min.js"></script>
+
+    <script src="~/AdminThem/assets/pages/datatables.editable.init.js"></script>
+    <script src="~/AdminTheme/assets/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/AdminTheme/assets/datatables/dataTables.bootstrap.js"></script>
+
+    <!-- Tree view js -->
+    <script src="~/AdminThem/assets/plugins/jstree/jstree.min.js"></script>
+    <script src="~/AdminThem/assets/pages/jquery.tree.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("li").click(function () {
+                var ParentIdval = $('#dragTree').attr('aria-activedescendant');
+                document.getElementById('ParentId').value = ParentIdval;
+
+            })
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        $('.dropify').dropify({
+            messages: {
+                'default': 'فایل را به اینجا بکشید یا کلیک کنید',
+                'replace': 'برای جایگزینی فایل را به اینجا بکشید یا کلیک کنید',
+                'remove': 'پاک کردن',
+                'error': 'با پوزش فراوان، خطایی رخ داده'
+            },
+            error: {
+                'fileSize': 'حجم فایل بیشتر از حد مجاز است (1M).'
+            }
+        });
+    </script>
+
+
+}

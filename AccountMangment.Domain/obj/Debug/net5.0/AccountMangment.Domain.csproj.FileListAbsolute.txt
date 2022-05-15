@@ -1,4 +1,3 @@
-C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Domain\obj\Debug\net5.0\AccountMangment.Domain.csproj.AssemblyReference.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Domain\obj\Debug\net5.0\AccountMangment.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Domain\obj\Debug\net5.0\AccountMangment.Domain.AssemblyInfoInputs.cache
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Domain\obj\Debug\net5.0\AccountMangment.Domain.AssemblyInfo.cs
@@ -10,6 +9,7 @@ C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Domain\bin\Debug\net
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Domain\bin\Debug\net5.0\StroykaShop.Framework.pdb
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Domain\obj\Debug\net5.0\AccountMangment.Domain.csproj.CopyComplete
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Domain\obj\Debug\net5.0\AccountMangment.Domain.dll
-C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Domain\obj\Debug\net5.0\refint\AccountMangment.Domain.dll
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Domain\obj\Debug\net5.0\AccountMangment.Domain.pdb
 C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Domain\obj\Debug\net5.0\ref\AccountMangment.Domain.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Domain\bin\Debug\net5.0\ref\AccountMangment.Domain.dll
+C:\Users\Abolfazll\source\repos\StroykaShop\AccountMangment.Domain\obj\Debug\net5.0\AccountMangment.Domain.csprojAssemblyReference.cache

@@ -1135,6 +1135,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Adminstretion\Pages\Accounts\Account\" />
     <Folder Include="wwwroot\AdminThem\assets\plugins\jstree\themes\default\" />
   </ItemGroup>
 

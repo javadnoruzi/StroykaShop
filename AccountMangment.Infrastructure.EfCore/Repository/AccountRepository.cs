@@ -16,5 +16,15 @@ namespace AccountMangment.Infrastructure.EfCore.Repository
         {
             return _accountMangmentContext.Accounts.FirstOrDefault(x=>x.UserName==UnserName);
         }
+
+        public Account GetbyMobile(string Mobile)
+        {
+            return _accountMangmentContext.Accounts.FirstOrDefault(x => x.Mobile==Mobile);
+        }
+
+        public Account GetEmail(string Emial)
+        {
+            return _accountMangmentContext.Accounts.FirstOrDefault(x => x.Email ==Emial);
+        }
     }
 }

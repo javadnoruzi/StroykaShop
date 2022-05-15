@@ -10,6 +10,7 @@ namespace AccountMangment.Application.Contract.AccountApp
         public string Password { get; set; }
         public long RoleId { get; set; }
         public string Mobile { get; set; }
+        public string Email { get; set; }
         public string ProfilePhoto { get; set; }
         public string CreationDate { get; set; }
     }

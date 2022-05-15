@@ -14,13 +14,15 @@ namespace AccountMangment.Application
         private readonly IFileUpload _FileUplaoad;
         private readonly IPasswordHasher _passwordHasher;
         private readonly IUnitofWork _unitOfwork;
+        private readonly IAuthHelper _authHelper;
 
-        public AccountApplication(IAccountRepository accountRepository, IFileUpload fileUplaoad, IPasswordHasher passwordHasher, IUnitofWork unitOfwork)
+        public AccountApplication(IAccountRepository accountRepository, IFileUpload fileUplaoad, IPasswordHasher passwordHasher, IUnitofWork unitOfwork, IAuthHelper authHelper)
         {
             _AccountRepository = accountRepository;
             _FileUplaoad = fileUplaoad;
             _passwordHasher = passwordHasher;
             _unitOfwork = unitOfwork;
+            _authHelper = authHelper;
         }
 
         public OperationResult ChangePassword(ChangePasswordAccount Command)
@@ -61,12 +63,14 @@ namespace AccountMangment.Application
                 if (command == null) return operation.Failed("ورودی ها نیمتواتد خالی باشد");
                 if (command.UserName == null) return operation.Failed(ResultMessage.Duplicateed);
                 if (_AccountRepository.Exist(x => x.UserName == command.UserName)) return operation.Failed("نام کاربری موجود است");
+                if (_AccountRepository.Exist(x => x.Email == command.Email)) return operation.Failed("ایمیل موجود است");
                 string Password = _passwordHasher.Hash(command.Password);
 
                 string Path = _FileUplaoad.Upload(command.ProfilePhoto, "ProfilePicture//");
-                _AccountRepository.Create(new Account(command.FullName, command.UserName, Password, command.RoleId, command.Mobile, Path));
+                _AccountRepository.Create(new Account(command.FullName, command.UserName, Password, command.RoleId, command.Mobile, Path,command.Email));
 
                 _unitOfwork.SaveChanges();
+                _unitOfwork.CommittTran();
                 return operation.Success();
 
 
@@ -95,9 +99,10 @@ namespace AccountMangment.Application
                 if (command.ProfilePhoto != null)
                     Path = _FileUplaoad.Upload(command.ProfilePhoto, "ProfilePicture//");
 
-                user.Edit(command.FullName, command.UserName, string.Empty, command.RoleId, command.Mobile, Path);
+                user.Edit(command.FullName, command.UserName, string.Empty, command.RoleId, command.Mobile, Path,command.Email);
 
                 _unitOfwork.SaveChanges();
+                _unitOfwork.CommittTran();
                 return operation.Success();
 
 
@@ -148,12 +153,22 @@ namespace AccountMangment.Application
            if(commadn==null)return opearation.Failed(ResultMessage.NullCommand);
 
            Account account=_AccountRepository.Get(commadn.UserName);
-           if(account==null) return opearation.Failed(ResultMessage.NotFound);
-           
-             var Result=_passwordHasher.Check(account.Password,commadn.Password);
-             if(Result.Verified){
-                 
+           if(account==null) _AccountRepository.GetbyMobile(commadn.UserName);
+
+            if (account == null) _AccountRepository.GetEmail(commadn.UserName);
+
+            if (account == null) return opearation.Failed("نام کاربری یا رمز عبور اشتباه است");
+
+            var Result=_passwordHasher.Check(account.Password,commadn.Password);
+             if(!Result.Verified)
+             {
+                _authHelper.SignIn(new AuthViewModel(account.Id, account.FullName, account.RoleId, account.UserName,new List<int>()));
+                return opearation.Success();
              }
+            else
+            {
+                return opearation.Failed();
+            }
 
 
         }
